@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Paw, Footprints, BookOpen, Calendar } from "lucide-react";
+import { ArrowLeft, Dog, Footprints, BookOpen, Calendar } from "lucide-react";
 import { toast } from "sonner";
 import ForestBackground from "@/components/ForestBackground";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -14,7 +14,7 @@ const Pegadas = () => {
     {
       title: "Sobrevivência da Matilha",
       description: "Guie sua matilha através de desafios ecológicos como busca por alimento e cuidado com filhotes.",
-      icon: Paw,
+      icon: Dog,
       image: "/images/pegadas/sobrevivencia-matilha.jpg",
       comingSoon: true
     },
