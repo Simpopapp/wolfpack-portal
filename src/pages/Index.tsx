@@ -16,6 +16,9 @@ const Index = () => {
       case "Árvore do Conhecimento":
         navigate("/arvore-conhecimento");
         break;
+      case "Pegadas":
+        navigate("/pegadas");
+        break;
       default:
         toast(`${section} será implementada em breve!`, {
           description: "Esta seção está em desenvolvimento.",
