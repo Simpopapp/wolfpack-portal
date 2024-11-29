@@ -3,12 +3,24 @@ import { Home, TreePine, Footprints, Moon } from "lucide-react";
 import PortalIcon from "@/components/PortalIcon";
 import ForestBackground from "@/components/ForestBackground";
 import { toast } from "sonner";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+
   const handleIconClick = (section: string) => {
-    toast(`${section} será implementada em breve!`, {
-      description: "Esta seção está em desenvolvimento.",
-    });
+    switch (section) {
+      case "Toca":
+        navigate("/toca");
+        break;
+      case "Árvore do Conhecimento":
+        navigate("/arvore-conhecimento");
+        break;
+      default:
+        toast(`${section} será implementada em breve!`, {
+          description: "Esta seção está em desenvolvimento.",
+        });
+    }
   };
 
   return (
